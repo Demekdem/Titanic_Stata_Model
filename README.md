@@ -47,9 +47,9 @@ W tabeli poniżej przedstawiono wyniki modelu ostatecznego. Model wstępny uwzgl
 
  
 
-6) Zapis modelu ostatecznego w formie równania
+5) Zapis modelu ostatecznego w formie równania
 log(P(y=1))/(1-P(y=1))=4,53 − 1,08⋅(pclass=2) − 2.02⋅(pclass=3) − 2,59⋅(sex=0) +−0,07⋅age + 0.001⋅age2 −0,45⋅sibsp + 0.39⋅(parch_bin=1) − 1,36⋅(embarked=2) +−0,64⋅(embarked=3)
-7) Interpretacja modelu ostatecznego
+6) Interpretacja modelu ostatecznego
 pclass (klasa): Hipoteza potwierdzona. Im niższa klasa (wyższy numer), tym mniejsze szanse na przeżycie (współczynniki silnie ujemne i istotne).
 
 sex (płeć): Hipoteza potwierdzona. Mężczyźni mieli radykalnie niższe szanse na przeżycie niż kobiety (współczynnik -2,59, bardzo istotny).
