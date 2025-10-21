@@ -81,6 +81,6 @@ Dalsza eksploracja zbioru danych oraz wprowadzenie dodatkowych zmiennych mogłob
 Eksperymentowanie rożnymi zmiennymi może umożliwić głębsze zrozumienie danych
 i do odkrycia nowych wzorców lub zależności.
 
-9) Literatura
+8) Literatura
 Aamir, M. (2023). Titanic survival prediction , ResearchGate
 https://www.researchgate.net/publication/383295501_TITANIC_SURVIVAL_PREDICTION
