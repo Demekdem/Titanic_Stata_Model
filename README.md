@@ -1,4 +1,4 @@
-# Titanic_Stata_Model
+# Titanic Stata Model
 
 ## 1) Wstęp
 W 1912 roku zdarzyła się najbardziej katastrofalny wypadek morski w historii – zatonięcie Titanica, w którym zginęło około 1500 osób. Raport jest stworzony z zbioru danych z Kaggle. Analiza została przeprowadzona podczas zajęć mikroekonometrii za pomocą programu Stata na pliku, który jest dodatkowo załączony.
