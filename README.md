@@ -1,48 +1,46 @@
-# Titanic Stata Model
+# Titanic Stata Logit model
 
 ## 1) Wstęp
-W 1912 roku zdarzyła się najbardziej katastrofalny wypadek morski w historii – zatonięcie Titanica, w którym zginęło około 1500 osób. Raport jest stworzony z zbioru danych z Kaggle. Analiza została przeprowadzona podczas zajęć mikroekonometrii za pomocą programu Stata na pliku, który jest dodatkowo załączony.
+W 1912 roku wydarzył się najbardziej katastrofalny wypadek morski w historii – zatonięcie Titanica, w którym zginęło około 1500 osób. Model Logit posłuży nam na zbadanie, które czynniki wpływają na przeżycie podczas katastrofy. Raport jest stworzony z zbioru danych z Kaggle.
 
-Celem tego badania jest stworzenie modeli predykcyjnych w celu prognozowania przeżywalności pasażerów Titanica. Wykorzystując do tego regresję logistyczną uwzględniając zmienne, które są według badanego kluczowe do przedstawienia tego modelu oraz które są zgodne z teorią ekonometrii.
 
-## 2) Opis zmiennych 
-1.	survival : Przeżycie pasażera (0 = No; 1 = Yes); (No– 61,80%, Yes – 38,20%)
-2.	pclass : Klasa pasażera (1 = 1st; 2 = 2nd; 3 = 3rd) (1rd=25%; 2nd=21%, 3rd=54%)
-3.	sex : Płeć (Male=0, Female=1); (Male – 64,40%; Female – 35,60%)
-4.	age : Wiek pasażera w latach 
-5.	sibsp : Liczba rodzeństwa i małżonków podróżujących razem 
-6.	parch : Liczba rodziców i dzieci podróżujących razem. 
-7.	fare : Opłata pasażera 
-8.	Embarked : Port zaokrętowania (C = Cherbourg; Q = Queenstown; 
-S = Southampton) (Cherbourg=21%; Queenstown=9%; Southampton=70%)
+## 2) Zmienne
+1.	survival - Przeżycie pasażera (0 = Nie; 1 = Tak)
+2.	pclass - Klasa pasażera (1=pierwsza, 2=druga, 3=trzecia)
+3.	sex - Płeć (Mężczyzna=0, Kobieta=1)
+4.	age - Wiek pasażera w latach 
+5.	sibsp - Liczba rodzeństwa i małżonków podróżujących razem 
+6.	parch - Liczba rodziców i dzieci podróżujących razem. 
+7.	fare - Opłata pasażera 
+8.	Embarked - Port zaokrętowania (C = Cherbourg, Q = Queenstown,S = Southampton)
      
 
 ## 3) Charakterystyka spodziewanych zależności hipotez
-Hipoteza 1:	zmienna pclass (+)
+Hipoteza 1:	zmienna pclass (-)
 Pasażerowie pierwszej klasy mieli lepszy dostęp do łodzi ratunkowych i mniejszy tłok w swojej części statku, co zwiększało szanse na przeżycie.
 
 Hipoteza 2:	zmienna sex 	(+)
-Historyczne relacje mówią „kobiety i dzieci pierwsze”, więc mężczyźni byli narażeni na niższe szanse przeżycia.
+Historyczne relacje mówią „kobiety i dzieci pierwsze”.
 
-Hipoteza 3: 	zmienna age (-)
+Hipoteza 3: 	zmienna age (+)
 W sytuacjach ratunkowych preferowano dzieci i młodsze osoby, a starsi mogli mieć trudności w szybkim dotarciu do łodzi.
 
 Hipoteza 4: 	zmienna fare (+)
 Wyższe opłaty były związane z lepszą klasą kabiny, co korelowało z lepszym dostępem do ratunku.
 
-Hipoteza 5: 	zmienna sibsp(-)
+Hipoteza 5: 	zmienna sibsp (-)
 Mała liczba towarzyszy mogła ułatwić szybkie działanie i zwiększyć szanse przeżycia.
 
 Hipoteza 6: 	zmienna parch (-)
 Dorosły pasażer mógł najpierw pomagać dzieciom lub starszym członkom rodziny, co spowalniało jego ewakuację.
 
-Hipoteza 7: 	zmienna embarked (?)
-Ze względu na brak jednoznacznych przesłanek historycznych i różnic w warunkach ewakuacji między portami, trudno przewidzieć kierunek wpływu zmiennej Embarked na przeżycie pasażera. Pozostałe zmienne są problematyczne do postawienia hipotezy.
 
-## 4) Model ostateczny
+## 4) Model wstępny i ostateczny
 W tabeli poniżej przedstawiono wyniki modelu ostatecznego. Model wstępny uwzględniał wszystkie dostępne zmienne, natomiast model ostateczny zawiera jedynie te, które okazały się istotne statystycznie lub miały uzasadnienie teoretyczne.
 
 <img width="608" height="236" alt="model_ostateczny" src="https://github.com/user-attachments/assets/8608701d-895e-4737-8140-a71bd5b0f992" />
+. 
+
 
  
 
